@@ -1,5 +1,4 @@
-﻿string rootDir = Ask("root dir");
-string projName = Ask("proj name");
+﻿string projDir = Ask("proj dir");
 List<(string content, string f)> templates = new()
 {
     ("", "README.md"),
@@ -47,7 +46,6 @@ void CreateTemplate()
 {
     try
     {
-        var projDir = Path.Combine(rootDir, projName);
         var srcDir = Path.Combine(projDir, "src");
         var testsDir = Path.Combine(projDir, "tests");
         Directory.CreateDirectory(projDir);
