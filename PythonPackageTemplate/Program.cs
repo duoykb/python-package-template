@@ -28,7 +28,8 @@ List<(string content, string fileName)> templates = new()
         where = src 
         """" , "setup.cfg"),
     (""""   
-    [build-system]\nrequires = [
+    [build-system]
+    requires = [
     "setuptools>=42",
     "wheel"
     ]
