@@ -1,5 +1,5 @@
 ﻿string projDir = Ask("proj dir");
-List<(string content, string f)> templates = new()
+List<(string content, string fileName)> templates = new()
 {
     ("", "README.md"),
     ($""""
