@@ -71,7 +71,7 @@ void CreateTemplate()
         Directory.CreateDirectory(srcDir);
         Directory.CreateDirectory(testsDir);
 
-        foreach (var (content, f) in templates) File.WriteAllText(Path.Combine(projDir, f), content);
+        foreach (var (content, fileName) in templates) File.WriteAllText(Path.Combine(projDir, fileName), content);
     }
     catch (IOException)
     {
